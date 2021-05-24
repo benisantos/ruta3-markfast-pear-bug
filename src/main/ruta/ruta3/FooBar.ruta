@@ -1,0 +1,11 @@
+PACKAGE ruta3;
+
+WORDLIST FooBarDict = 'FooBarDict.txt';
+
+DECLARE FooBar;
+
+Document{-> MARKFAST(FooBar, FooBarDict, true, 0, false)};
+
+a:FooBar{-> LOG("[FooBar.ruta] FooBar detected: " + a.ct)};
+
+Document{-CONTAINS(FooBar) -> LOG("[FooBar.ruta] No FooBar found!")};
