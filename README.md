@@ -7,7 +7,7 @@ This is a sample project to reproduce a likely bug with Ruta 3 MARKFAST/TABLE in
 
 When running an AAE in a PEAR context, if the **first** Ruta script after the CAS creation containts a MARKFAST (same for MARKTABLE), that action doesn't work.
 
-The problem cames from the method `RutaStream#moveToFirst` when it's called from `TreeWordList.find`; in that case, the underlying iterator is not properly reset.
+The problem seems to be coming from the method `RutaStream#moveToFirst` when it's called from `TreeWordList.find`; in that case, the underlying iterator is not properly reset.
 
 ## Steps to reproduce the problem
 
