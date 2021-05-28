@@ -3,6 +3,8 @@
 
 This is a sample project to reproduce a likely bug with Ruta 3 MARKFAST/TABLE in a PEAR context.
 
+**EDIT**: The problem comes from uimaj-core, not Ruta. More info here: https://issues.apache.org/jira/browse/UIMA-6367
+
 ## Description
 
 When running an AAE in a PEAR context, if the **first** Ruta script after the CAS creation containts a MARKFAST (same for MARKTABLE), that action doesn't work.
